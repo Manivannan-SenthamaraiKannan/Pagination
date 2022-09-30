@@ -1,64 +1,61 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+th,
+td {
+    height: 30px;
+    vertical-align: center;
+    text-align: center;
+    padding: 10px;
+    width: 5%;
+    border-bottom: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem ;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 10px;
-  background: #20b2aa;
-}
-.pagination ul {
-  display: flex;
-  background: whitesmoke;
-  padding: 8px;
-  border-radius: 50px;
+th {
+    font-size: 24px;
+    padding: 8px;
 }
 
-.pagination ul li {
-  color: #20b2aa;
-  list-style: none;
-  line-height: 45px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-.pagination ul li.num {
-  height: 45px;
-  width: 45px;
-  margin: 0 3px;
+.dataTable {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid black;
 }
 
-.pagination ul li.btn {
-  padding: 0 20px;
+tr:nth-child(even) {
+    background: rgb(237, 238, 238);
 }
 
-.pagination ul li.prev {
-  border-radius: 25px 5px 5px 25px;
+thead tr {
+    background: rgb(73, 230, 194);
+    color: white;
 }
 
-.pagination ul li.next {
-  border-radius: 5px 25px 25px 5px;
+.heading {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1%;
 }
 
-.pagination ul li.active,
-.pagination ul li.num:hover,
-.pagination ul li.btn:hover {
-  color: whitesmoke;
-  background: #20b2aa;
+.anchorlist {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-table{
-  border-collapse: collapse;
+.anchorlist a {
+    color: rgb(67, 67, 221);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.anchorlist a:hover {
+    background: rgb(35, 144, 227);
 }
